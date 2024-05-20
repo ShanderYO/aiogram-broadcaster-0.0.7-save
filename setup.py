@@ -1,4 +1,6 @@
-from setuptools import setup
+import sys
+sys.path.append('/tmp/custom_path_for_install')  # Изменяем путь поиска модулей временно
+from setuptools import setup, find_packages
 
 setup(
     name='aiogram-broadcaster',

@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='aiogram-broadcaster',
@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://gitlab.com/getvalet/aiogram-broadcaster-0.0.7',
-    packages=find_packages(),
+    packages=['aiogram_broadcaster'],  # Пример, как указать конкретные пакеты
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -24,4 +24,3 @@ setup(
         # Сюда можно добавить зависимости, если они есть
     ],
 )
-
